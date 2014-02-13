@@ -10,8 +10,8 @@ footer {
 	font-size: x-small;
 	color: black;
  	text-align: center;
-   position:fixed;
-   bottom:70px;
+ 	position: fixed;
+   bottom: 70px;
    height:20px;
    width:100%;
 	-webkit-animation: comeInDescription 2s 1 ease-in-out forwards;
@@ -24,22 +24,32 @@ h4 {
 	-webkit-animation: comeInDescription 2s 1 ease-in-out forwards;
 }
 
-#result{ 
-	font-size:large; 
-	font-family: 'Raleway';
-	font-weight: bold;
+textarea{
 	-webkit-border-radius: 6px; 
 	-moz-border-radius: 6px; 
 	border-radius: 6px;
+	outline: none;
+	resize: none;
+}
+
+#result{
+	font-size:large; 
+	font-family: 'Raleway';
+	font-weight: bold;
+	margin-left:auto; margin-right:auto;
 	border-left: 2px solid rgb(255,255,255);
 	border-bottom: 2px solid rgb(255,255,255);
 	border-right: 2px solid rgb(255,255,255);
-	margin-left:auto; margin-right:auto;
+	-webkit-border-radius: 6px; 
+	-moz-border-radius: 6px; 
+	border-radius: 6px;
 	background-color:rgba(255,255,255,0.6); 
 }
+
 tr.error{ 
 	background-color: rgba(255,0,0,0.8); 
 }
+
 
 button{
 	color: white;
