@@ -40,22 +40,22 @@ function csv() {
       	error = true;
     	}
 	}
-	if (!error) {
-		r.unshift('<p>\n<table class="center" id="result">');		//Introducimos al principio del array la cadena indicada
-  		r.push('</table>');													//Añadimos por la cola del array la cadena indicada
-  		resultado.innerHTML = r.join('\n');							//Juntamos en una sola cadena los elementos del array separados por el salto de linea	
-  		$("#resultado").animate({opacity:1}, 1500);
-  	}
+	r.unshift('<p>\n<table class="center" id="result">');		//Introducimos al principio del array la cadena indicada
+  	r.push('</table>');													//Añadimos por la cola del array la cadena indicada
+  	resultado.innerHTML = r.join('\n');							//Juntamos en una sola cadena los elementos del array separados por el salto de linea	
+  	$("#resultado").animate({opacity:1}, 1000);
 }
 
 
 window.onload = function() {
   // If the browser supports localStorage and we have some stored data
+  
+  $("#principal").animate({opacity:1}, 1000);
   if (window.localStorage && localStorage.original) {
   		document.getElementById("entrada").value = localStorage.original;
   }
   else{
-	  	document.getElementById("entrada").placeholder = ("");
+	  	document.getElementById("entrada").placeholder = ("Ej: Nombre,Apellidos,Edad,Ciudad");
   } 
   	
 };

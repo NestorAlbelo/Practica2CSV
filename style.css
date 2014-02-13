@@ -1,21 +1,3 @@
-th, td      { vertical-align: top; text-align: right; font-size:large; }     /* Don't center table cells  */
-
- 
-tr:nth-child(odd)    { background-color:#eee; }
-tr:nth-child(even)    { background-color:#00FF66; } 
-table        { border: inset; border-color: white; background-color:gray; }
-table.center { margin-left:auto; margin-right:auto; }
-#result      { border-color: red; }
-tr.error       { background-color: red; }
-
-
-h4 {
-	font-family: 'Fenix', serif;
-	font-size: x-large;
-	text-align: center;
-	-webkit-animation: comeInDescription 2s 1 ease-in-out forwards;
-}
-
 body{
  	background: url("http://f.cl.ly/items/221W1w0m2D1N383D393y/Orange-bg.png");
 	background-repeat:no-repeat;
@@ -35,6 +17,29 @@ footer {
 	-webkit-animation: comeInDescription 2s 1 ease-in-out forwards;
 }
 
+h4 {
+	font-family: 'Fenix', serif;
+	font-size: x-large;
+	text-align: center;
+	-webkit-animation: comeInDescription 2s 1 ease-in-out forwards;
+}
+
+#result{ 
+	font-size:large; 
+	font-family: 'Raleway';
+	font-weight: bold;
+	-webkit-border-radius: 6px; 
+	-moz-border-radius: 6px; 
+	border-radius: 6px;
+	border-left: 2px solid rgb(255,255,255);
+	border-bottom: 2px solid rgb(255,255,255);
+	border-right: 2px solid rgb(255,255,255);
+	margin-left:auto; margin-right:auto;
+	background-color:rgba(255,255,255,0.6); 
+}
+tr.error{ 
+	background-color: rgba(255,0,0,0.8); 
+}
 
 button{
 	color: white;
@@ -99,8 +104,8 @@ h1 a {
 }
 		
 @-webkit-keyframes comeInTitle {
-	0% { letter-spacing: 70px; color: rgba(200,200,200,0); }
-	100% { letter-spacing: 30px; color: rgba(200,200,200,1) }
+	0% { letter-spacing: 70px; color: rgba(255,255,255,0); }
+	100% { letter-spacing: 30px; color: rgba(255,255,255,1) }
 }
 
 @-webkit-keyframes comeInDescription {
