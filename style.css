@@ -32,18 +32,21 @@ textarea{
 	resize: none;
 }
 
-#result{
+table{
 	font-size:large; 
 	font-family: 'Raleway';
 	font-weight: bold;
 	margin-left:auto; margin-right:auto;
-	border-left: 2px solid rgb(255,255,255);
-	border-bottom: 2px solid rgb(255,255,255);
-	border-right: 2px solid rgb(255,255,255);
-	-webkit-border-radius: 6px; 
-	-moz-border-radius: 6px; 
-	border-radius: 6px;
+	border-collapse: collapse;
+	border: 2px solid white;
 	background-color:rgba(255,255,255,0.6); 
+}
+
+td{
+	border-right:1px solid white;
+}
+tr{
+	border-bottom:1px solid white;
 }
 
 tr.error{ 

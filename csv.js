@@ -12,8 +12,8 @@ function csv() {
 	var lines = document.getElementById("entrada").value.split(/\n+\s*/);
 	var r = [];
 	var row = "<% _.each(items, function(name) { %>"     +
-            "                    <td><%= name %></td>" +
-            "              <% }); %>";
+             "<td><%= name %></td>" +
+             "<% }); %>";
 	
 	if (window.localStorage) localStorage.original  = document.getElementById("entrada").value;
 	
@@ -40,9 +40,9 @@ function csv() {
       	error = true;
     	}
 	}
-	r.unshift('<p>\n<table class="center" id="result">');		//Introducimos al principio del array la cadena indicada
+	r.unshift('\n<table class="center" id="result">');			//Introducimos al principio del array la cadena indicada
   	r.push('</table>');													//Añadimos por la cola del array la cadena indicada
-  	resultado.innerHTML = r.join('\n');							//Juntamos en una sola cadena los elementos del array separados por el salto de linea	
+  	resultado.innerHTML = r.join('\n');								//Juntamos en una sola cadena los elementos del array separados por el salto de linea	
   	$("#resultado").animate({opacity:1}, 1000);
 }
 
