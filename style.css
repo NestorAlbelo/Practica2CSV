@@ -1,0 +1,109 @@
+th, td      { vertical-align: top; text-align: right; font-size:large; }     /* Don't center table cells  */
+
+ 
+tr:nth-child(odd)    { background-color:#eee; }
+tr:nth-child(even)    { background-color:#00FF66; } 
+table        { border: inset; border-color: white; background-color:gray; }
+table.center { margin-left:auto; margin-right:auto; }
+#result      { border-color: red; }
+tr.error       { background-color: red; }
+
+
+h4 {
+	font-family: 'Fenix', serif;
+	font-size: x-large;
+	text-align: center;
+	-webkit-animation: comeInDescription 2s 1 ease-in-out forwards;
+}
+
+body{
+ 	background: url("http://f.cl.ly/items/221W1w0m2D1N383D393y/Orange-bg.png");
+	background-repeat:no-repeat;
+	background-size: 100%;
+ 	font-family: serif;
+}
+
+footer {
+	font-family: 'Hammersmith One', sans-serif;
+	font-size: x-small;
+	color: black;
+ 	text-align: center;
+   position:fixed;
+   bottom:70px;
+   height:20px;
+   width:100%;
+	-webkit-animation: comeInDescription 2s 1 ease-in-out forwards;
+}
+
+
+button{
+	color: white;
+	text-shadow: 0px -1px 0px #276B9E;
+	line-height: 2px;
+	height: 26px;
+	width: 90px;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#66c8eb), to(#337ed1));
+	background-image: -moz-linear-gradient(top,  #66c8eb,  #337ed1);
+	background-image: #43a2e8;
+	-moz-box-shadow: inset 0px -1px 1px rgba(255,255,255,0.3), inset 0px 1px 1px rgba(255,255,255,0.3), 0px 1px 5px rgba(0,0,0,0.2);
+	-webkit-box-shadow: inset 0px -1px 1px rgba(255,255,255,0.3), inset 0px 1px 1px rgba(255,255,255,0.3), 0px 1px 5px rgba(0,0,0,0.2);
+	box-shadow: inset 0px -1px 1px rgba(255,255,255,0.3), inset 0px 1px 1px rgba(255,255,255,0.3), 0px 1px 5px rgba(0,0,0,0.2);
+	border: 1px solid #22689b;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+button a{
+	-webkit-animation: comeinbutton 1.5s 1 ease-in-out forwards;
+	-moz-animation: comeinbutton 1.5s 1 ease-in-out forwards;
+}
+button:hover{
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#8cd6f0), to(#3981d2));
+	background-image: -moz-linear-gradient(top,  #8cd6f0,  #3981d2);
+	background-image: #70bbed;
+}
+button:active{
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#2e74c1), to(#4db3e9));
+	background-image: -moz-linear-gradient(top,  #2e74c1,  #4db3e9);
+	background-image: #3c95e6;
+	-moz-box-shadow: inset 0px -1px 5px rgba(0,0,0,0.1), inset 0px 1px 5px rgba(0,0,0,0.1), 0px 1px 5px rgba(255,255,255,0.2);
+	-webkit-box-shadow: inset 0px -1px 5px rgba(0,0,0,0.1), inset 0px 1px 5px rgba(0,0,0,0.1), 0px 1px 5px rgba(255,255,255,0.2);
+	box-shadow:  inset 0px -1px 5px rgba(0,0,0,0.1), inset 0px 1px 5px rgba(0,0,0,0.1), 0px 1px 5px rgba(255,255,255,0.2);
+	text-shadow: 0px 1px 0px #276B9E;
+}
+
+
+
+h1 { 
+	width: 960px; 
+	margin: 50px auto 0;
+	text-align: center;
+	color: gray;
+	text-transform: uppercase;
+	padding: 1px;
+	font-family: 'Raleway', cursive;
+	font-weight: 0;
+	position: relative;
+	background: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.5), rgba(0,0,0,0));
+}
+
+h1 a {
+	background: none;
+	display: block;
+	padding: 20px;
+	text-decoration: none;
+	letter-spacing: 30px;
+	color: white;
+	-webkit-animation: comeInTitle 1.5s 1 ease-in-out forwards;
+}
+		
+@-webkit-keyframes comeInTitle {
+	0% { letter-spacing: 70px; color: rgba(200,200,200,0); }
+	100% { letter-spacing: 30px; color: rgba(200,200,200,1) }
+}
+
+@-webkit-keyframes comeInDescription {
+	0% { color: rgba(0,0,0,0); }
+	100% {  color: rgba(0,0,0,0.9) }
+}
